@@ -1,0 +1,90 @@
+.slider-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-image: url(../../images/02.hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__title {
+  max-width: 860px;
+  min-height: 156px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 78px;
+  margin-left: 16.15%;
+}
+
+.slider__pharagraph {
+  max-width: 860px;
+  margin: 12px 0 40px 16.15%;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.slider__nav-button {
+  width: 250px;
+  height: 66px;
+  text-decoration: none;
+  color: #384054;
+  background-color: #E3EFFA;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16.15%;
+  border-radius: 6px;
+}
+
+.slider__nav-button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width:1100px) {
+  .slider__nav-button {
+    width: 320px;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:660px) {
+  .slider-page {
+    align-items: center;
+    background-image: url(../../images/main_360.png);
+  }
+
+  .slider__title {
+    max-width: 320px;
+    min-height: 62px;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  .slider__pharagraph {
+    max-width: 320px;
+    margin: 10px 0 20px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width:360px) {
+
+  .slider__title {
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+
+  .slider__nav-button {
+    width: 320px;
+    font-size: 20px;
+    margin: 0;
+  }
+}

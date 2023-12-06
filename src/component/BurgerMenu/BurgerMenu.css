@@ -1,0 +1,131 @@
+.burger-menu {
+  position: fixed;
+  list-style: none;
+  top: 61px;
+  left: 0;
+  width: 100%;
+  height: 296px;
+  margin: 0;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  align-content: flex-start;
+  padding: 0;
+  z-index: 2;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  overflow-y: auto;
+}
+
+.burger-menu_opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger-menu__logo {
+  margin-left: 95px;
+  height: 40px;
+  align-self: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 50vw;
+}
+
+.burger-menu__item {
+  display: contents;
+}
+
+.burger-menu__item:first-child .menu__link {
+  margin-top: 159px;
+}
+
+.burger-menu__button {
+  margin-top: 20px;
+  align-self: center;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url('../../images/burger_close.svg');
+  background-size: 100%;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.burger-menu__button:hover {
+  opacity: 0.7;
+}
+
+.burger-menu__navigation {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 0;
+}
+
+.burger-menu__link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  line-height: 24.38px;
+  margin-bottom: 20px;
+  min-height: 22px;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid white;
+}
+
+.burger-menu__link:hover {
+  opacity: 0.7;
+}
+
+.burger-menu__link_active {
+  border-bottom: 2px solid black;
+}
+
+.burger-menu__button-link {
+  /* position: absolute;
+  top: 0; */
+  margin: 597px 0 0;
+  padding: 0 0 90px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.burger-menu__button-link-inner {
+  background-color: #F9F9F9;
+  color: black;
+  border-radius: 20px;
+  height: 32px;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu__button-link:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width:650px) {
+  .burger-menu__logo {
+    margin-right: 30vw;
+  }
+
+}
+
+@media screen and (max-width:450px) {
+  .burger-menu__logo {
+    margin-right: 0;
+  }
+
+}
