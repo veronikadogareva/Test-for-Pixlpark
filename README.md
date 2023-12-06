@@ -29,4 +29,4 @@ npm start — запускает сервер
 - **React Context**: Для передачи данных между компонентами используется механизм контекста React Context.
 
 ## Ссылка на приложение(GitHub Pages)
-[****](https://test-for-pixlpark.vercel.app/)https://test-for-pixlpark.vercel.app/
+https://test-for-pixlpark.vercel.app/
